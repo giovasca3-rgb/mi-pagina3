@@ -11,6 +11,32 @@
 </head>
 
 <body>
+    <!-- PORTADA INICIAL -->
+<div id="portada" class="portada">
+    <div class="portada-contenido">
+
+        <img 
+            src="img/portada.jpeg" 
+            alt="Cuidado del recién nacido"
+            class="portada-imagen"
+        >
+
+        <h1>Cuidado del recién nacido</h1>
+
+        <p>
+            Información y recomendaciones para el cuidado,
+            alimentación, higiene y bienestar del bebé y cuidado del cordón umbilical.
+        </p>
+
+        <button onclick="ingresarPagina()">
+            Ingresar a la página
+        </button>
+
+    </div>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div id="contenido-principal" class="oculto">
 
     <header>
         <h1>Plataforma Digital Sobre el Cuidado del Recién Nacido</h1>
@@ -25,7 +51,7 @@
         <a href="#sueno">Sueño seguro</a>
         <a href="#vacunas">Vacunas</a>
         <a href="#alarma">Señales de alarma</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#videos">Videos</a>
     </nav>
 
     <main>
@@ -159,6 +185,7 @@
             Esta página tiene finalidad educativa y no reemplaza la evaluación
             ni las indicaciones de un profesional de salud.
         </p>
+        
     </div>
 </section>
 
@@ -230,49 +257,185 @@
 <section id="alimentacion">
     <h2>🍼 Alimentación y lactancia</h2>
     <p>
-        Aquí irá la información detallada sobre la alimentación y el cuidado
-        durante la lactancia.
+         <ul>
+            <li>Recomendaciones ClaveLactancia</li>
+            <li>exclusiva: No se necesita dar agua, jugos ni otros alimentos en los primeros 6 meses.</li>
+            <li>A demanda: 
+Se debe amamantar cada vez que el bebé pida, entre 8 y 12 veces al día.
+Inicio temprano: Conviene iniciar el amamantamiento en la primera hora después del parto. </li>
+            <li>Calostro: 
+La primera leche, espesa y amarillenta, que protege al bebé de infecciones.</li>
+            <li>Leche de transición: 
+Aparece a los pocos días mientras aumenta la cantidad de producción. </li>
+            <li>Leche madura: 
+Leche definitiva que cubre todos los requerimientos de nutrición e hidratación</li>
+            
+        </ul>
     </p>
+    <div class="hero-imagen">
+        <img 
+            src="img/madre.jpeg"
+            alt="Madre cuidando a su bebé">
+    </div>
 </section>
 
 <section id="higiene">
     <h2>🛁 Higiene y baño</h2>
     <p>
-        Aquí irá la información detallada sobre la higiene y el baño del
-        recién nacido.
+        1:Preparación y seguridad
     </p>
+    <ul>
+        <li>Temperatura:
+ El agua debe estar tibia (comprobar con el codo) y el ambiente cálido sin corrientes de aire</li>
+        <li>Supervisión:
+ Nunca dejes al bebé solo en la bañera, ni siquiera por un segundo.</li>
+        <li>Sujeción:
+ Sostén firmemente su cabeza y cuello apoyados en tu antebrazo, colocando la mano en su axila</li>
+    </ul>
+    <p>2:Orden de lavado (de arriba hacia abajo)</p>
+    <ul>
+        <li>Cara: 
+Lávala solo con agua y una gasa limpia o toallita, usando una parte distinta para cada ojo desde el lagrimal hacia afuera.</li>
+        <li>Cuerpo:
+ Aplica un jabón neutro o sin fragancia, limpiando con suavidad los pliegues del cuello, axilas e ingles.</li>
+        <li>Genitales:
+ En las niñas, limpia siempre de adelante hacia atrás. En los niños, no fuerces ni retires el prepucio.</li>
+        <li>Cabello:
+ Lávalo al final con agua o un champú suave para evitar la pérdida de calor</li>
+    </ul>
+<!-- SECCIÓN DE VIDEOS -->
+<section id="videos" class="seccion">
+    <h2>Video educativo</h2>
+
+    <p>
+        En este video aprenderás más sobre el cuidado adecuado
+        del recién nacido.
+    </p>
+
+    <div class="video-card">
+        <h3>Cuidados del bebé</h3>
+
+        <video 
+            src="videos/cuidado-bebe.mp4"
+            controls
+            preload="auto"
+            class="video-local">
+        </video>
+    </div>
 </section>
 
 <section id="sueno">
     <h2>😴 Sueño seguro</h2>
     <p>
-        Aquí irá la información detallada sobre las recomendaciones para un
-        descanso seguro del recién nacido.
+        el sueño seguro son las medidas que se deben aplicar para proteger al bebé mientras duerme y disminuir el riesgo de asfixia, sofocación y muerte súbita del lactante.
     </p>
+    <p>1. posición para dormir</p>
+    <ul>
+        <li>el bebé debe colocarse siempre boca arriba para dormir, tanto durante la noche como en las siestas. no se recomienda dormirlo de lado o boca abajo.</li>
+    </ul>
+    <p>2. lugar adecuado</p>
+    <ul>
+        <li>debe dormir en una cuna, moisés o corral seguro, sobre un colchón firme, plano y con una sábana bien ajustada.</li>
+    </ul>
+    <p>3. cuna despejada</p>
+    <ul>
+        <li>no debe haber dentro de la cuna almohadas, peluches, juguetes, cojines, protectores ni mantas sueltas, porque pueden cubrir la cara del bebé y dificultar su respiración.</li>
+    </ul>
+    <p>4. compartir habitación</p>
+    <ul>
+        <li>es recomendable que el bebé duerma en la misma habitación que sus padres o cuidador, pero en su propia cuna, especialmente durante los primeros meses.</li>
+    </ul>
+    <p>5. evitar el exceso de calor</p>
+    <ul>
+        <li>no se debe abrigar demasiado al bebé ni cubrirle la cabeza. la ropa debe ser adecuada para la temperatura del ambiente.</li>
+    </ul>
+    <p>6. ambiente libre de humo</p>
+    <ul>
+        <li>el bebé debe mantenerse alejado del cigarrillo, vapeo y cualquier tipo de humo, antes y después del nacimiento.</li>
+    </ul>
+    <p>7. lactancia materna</p>
+    <ul>
+        <li>la lactancia materna se recomienda cuando sea posible y está asociada con un menor riesgo de muerte súbita del lactante.</li>
+    </ul>
+    <p>8. tiempo boca abajo</p>
+    <ul>
+        <li>el bebé debe realizar momentos de juego boca abajo cuando esté despierto y bajo supervisión, ya que ayuda a fortalecer sus músculos. para dormir, siempre se coloca boca arriba.</li>
+    </ul>
+     <div class="hero-imagen">
+        <img 
+            src="img/sueño.jpeg"
+            alt="Madre cuidando a su bebé">
+    </div>
+    
 </section>
 
 <section id="vacunas">
     <h2>💉 Vacunas y controles</h2>
     <p>
-        Aquí irá la información detallada sobre los controles y cuidados de
-        salud del recién nacido.
+        Vacunas iniciales (Primeras 24 horas)
     </p>
+    <ul>
+        <li>BCG: 
+Protege contra las formas graves de tuberculosis (meningitis tuberculosa). Se aplica en una sola dosis en el brazo derecho.</li>
+        <li>Hepatitis B:
+Previene esta infección viral del hígado. Se administra vía intramuscular siempre que el bebé pese dos kilos o más</li>
+
+    </ul>
+    <div class="hero-imagen">
+        <img 
+            src="img/vacuna.jpeg"
+            alt="Madre cuidando a su bebé">
+    </div>
 </section>
 
-<section id="alarma">
-    <h2>⚠️ Señales de alarma</h2>
+<section id="CORDÓN UMBILICAL">
+    <h2>👶CUIDADO DEL CORDÓN UMBILICAL DEL RECIÉN NACIDO</h2>
     <p>
-        Aquí irá la información detallada sobre las señales que requieren
-        orientación o atención de un profesional de salud.
+        mantener la zona limpia y seca para facilitar su caída natural entre los 5 y 15 días de vida.
     </p>
-</section>
+    <p> 3:Pasos para la limpieza diaria</p>
+    <ul>
+        <li>Lávate las manos con agua y jabón antes de tocar al bebé.</li>
+        <li>Limpia con suavidad la base del muñón usando una gasa estéril humedecida con agua tibia y jabón neutro.</li>
+        <li>Seca muy bien la zona con una gasa seca mediante toques suaves, sin frotar.</li>
+        <li>Déjalo al aire libre durante unos minutos para asegurar que no quede humedad</li>
+    </ul>
+    <p> 2:Qué debes evitar</p>
+    <ul>
+        <li>No uses alcohol ni otros antisépticos fuertes de manera rutinaria, a menos que tu pediatra te lo indique específicamente.</li>
+        <li>No arranques el cordón aunque esté colgando de un hilo; debe desprenderse solo.</li>
+        <li>Evita cubrirlo con fajas, apósitos o vendajes herméticos que acumulen humedad.</li>
+        <li>Mantén el pañal doblado por debajo del ombligo para que no se moje con la orina.</li>
+    </ul>
+    <p>3:Señales de alarma (Cuándo consultar al médico)</p>
+    <p>Lleva al bebé al centro de salud o pediatra si notas:</p>
+    <ul>
+        <li>Enrojecimiento o inflamación que se extiende por la piel del  ombligo.</li>
+        <li>Secreción con mal olor o pus de color amarillo/verdoso.</li>
+        <li>Sangrado constante o abundante.</li>
+        <li>Fiebre o si el cordón no se cae después de 3 semanas</li>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>
-                Para más información, puedes comunicarte con nosotros.
-            </p>
-        </section>
+    </ul>
+</section>
+<!-- SECCIÓN DE VIDEOS -->
+<section id="videos" class="seccion">
+    <h2>Video educativo</h2>
+
+    <p>
+        En este video aprenderás más sobre el cuidado del cordón umbilical.
+    </p>
+
+    <div class="video-card">
+        <h3>cuidado del cordón umbilical</h3>
+
+        <video 
+            src="./videos/cuidado-umbilical.mp4"
+            controls
+            preload="auto"
+            class="video-local">
+        </video>
+    </div>
+</section>
 
     </main>
 
@@ -281,6 +444,6 @@
     </footer>
 
     <script src="script.js"></script>
-
+</div>
 </body>
 </html>
