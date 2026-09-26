@@ -1,36 +1,25 @@
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+html,
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f9fc;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 
-header {
-    background: linear-gradient(135deg, #6ec6ca, #4a90a4);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
+/* ENCABEZADO */
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8c8dc, #f6b6d0);
+    color: #7a3155;
 }
 
 
@@ -49,7 +38,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #35758a;
+    color: #010708;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 20px;
@@ -306,4 +295,302 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     font-style: italic;
+}
+/* PORTADA A PANTALLA COMPLETA */
+.portada {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #f8dce8,
+        #eadcf7,
+        #dcecff
+    );
+
+    text-align: center;
+}
+
+/* CONTENIDO DE LA PORTADA */
+.portada-contenido {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGEN DE LA PORTADA */
+.portada-imagen {
+    width: min(500px, 85vw);
+    height: min(420px, 50vh);
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(100, 70, 100, 0.25);
+
+    margin-bottom: 25px;
+}
+
+/* TÍTULO */
+.portada h1 {
+    color: #9b4f75;
+    font-size: clamp(32px, 5vw, 58px);
+    margin: 5px 0 15px;
+}
+
+/* DESCRIPCIÓN */
+.portada p {
+    color: #5f4b58;
+    font-size: clamp(16px, 2vw, 22px);
+    line-height: 1.6;
+
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+}
+
+/* BOTÓN */
+.portada button {
+    background: #d982a8;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 15px 35px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 15px rgba(120, 70, 100, 0.25);
+
+    transition: 0.3s;
+}
+
+.portada button:hover {
+    background: #c96891;
+    transform: translateY(-3px);
+}
+/* VIDEO LOCAL */
+.video-local {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+/* opcional
+/* DISEÑO DE VIDEOS */
+.videos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.video-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-card h3 {
+    margin-bottom: 15px;
+    color: #1597b5;
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.logo-contenedor {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.titulo-encabezado {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo-encabezado h1 {
+    color: #8b3d62;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.titulo-encabezado p {
+    color: #6d4055;
+    font-size: 18px;
+}
+
+/* SERVICIOS */
+.servicios {
+    background: #f8effb;
+    border-radius: 25px;
+    margin: 30px auto;
+    padding: 40px 25px;
+}
+
+.servicios h2 {
+    text-align: center;
+    color: #a84d78;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.descripcion-servicios {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.servicios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.servicio-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(120, 70, 120, 0.15);
+    border: 2px solid #f0d4e3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(120, 70, 120, 0.22);
+}
+
+.servicio-icono {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.servicio-card h3 {
+    color: #9b4770;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.servicio-card p {
+    color: #555;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .logo-contenedor {
+        width: 110px;
+        height: 110px;
+    }
+
+    .titulo-encabezado h1 {
+        font-size: 27px;
+    }
+
+    .titulo-encabezado p {
+        font-size: 16px;
+    }
+
+    .servicios {
+        padding: 25px 15px;
+        margin: 20px 10px;
+    }
+
+    .servicios h2 {
+        font-size: 28px;
+    }
+
+    .servicios-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-card {
+        padding: 20px;
+    }
+}
+@media (max-width: 600px) {
+
+    .portada {
+        min-height: 100vh;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .portada-imagen {
+        width: 90vw;
+        height: 40vh;
+        max-height: 350px;
+        border-radius: 20px;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .portada p {
+        font-size: 16px;
+        max-width: 95%;
+    }
+
+    .portada button {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
 }
