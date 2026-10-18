@@ -58,7 +58,7 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: #f8effb;
     margin-bottom: 25px;
     padding: 35px;
     border-radius: 15px;
@@ -217,7 +217,7 @@ footer {
 
 
 .tarjeta {
-    border: 1px solid #e5eef2;
+    border: 1px solid white;
     padding: 25px;
     border-radius: 15px;
     transition: 0.3s;
